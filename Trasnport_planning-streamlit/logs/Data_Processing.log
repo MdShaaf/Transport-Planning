@@ -1,0 +1,52 @@
+2025-12-15 17:09:24,762 - Data_Processing - INFO - Reading the file....
+2025-12-15 17:09:24,984 - Data_Processing - INFO - yellow_tripdata_2025-01.parquet Data loaded successfully with shape: (3475226, 20)
+2025-12-15 17:09:24,985 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:09:27,775 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:09:32,051 - Data_Processing - INFO - Data sampled successfully with new shape: (347523, 20)
+2025-12-15 17:09:32,344 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-01_sampled_data.parquet'.
+2025-12-15 17:09:32,690 - Data_Processing - INFO - yellow_tripdata_2025-02.parquet Data loaded successfully with shape: (3577543, 20)
+2025-12-15 17:09:32,690 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:09:35,183 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:09:39,409 - Data_Processing - INFO - Data sampled successfully with new shape: (357755, 20)
+2025-12-15 17:09:39,680 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-02_sampled_data.parquet'.
+2025-12-15 17:09:40,048 - Data_Processing - INFO - yellow_tripdata_2025-03.parquet Data loaded successfully with shape: (4145257, 20)
+2025-12-15 17:09:40,048 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:09:42,545 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:09:47,212 - Data_Processing - INFO - Data sampled successfully with new shape: (414526, 20)
+2025-12-15 17:09:47,464 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-03_sampled_data.parquet'.
+2025-12-15 17:09:47,870 - Data_Processing - INFO - yellow_tripdata_2025-04.parquet Data loaded successfully with shape: (3970553, 20)
+2025-12-15 17:09:47,870 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:09:50,455 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:09:56,142 - Data_Processing - INFO - Data sampled successfully with new shape: (397056, 20)
+2025-12-15 17:09:56,419 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-04_sampled_data.parquet'.
+2025-12-15 17:09:56,834 - Data_Processing - INFO - yellow_tripdata_2025-05.parquet Data loaded successfully with shape: (4591845, 20)
+2025-12-15 17:09:56,834 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:09:59,824 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:10:05,276 - Data_Processing - INFO - Data sampled successfully with new shape: (459185, 20)
+2025-12-15 17:10:05,587 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-05_sampled_data.parquet'.
+2025-12-15 17:10:06,020 - Data_Processing - INFO - yellow_tripdata_2025-06.parquet Data loaded successfully with shape: (4322960, 20)
+2025-12-15 17:10:06,021 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:10:08,659 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:10:14,498 - Data_Processing - INFO - Data sampled successfully with new shape: (432296, 20)
+2025-12-15 17:10:14,811 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-06_sampled_data.parquet'.
+2025-12-15 17:10:15,232 - Data_Processing - INFO - yellow_tripdata_2025-07.parquet Data loaded successfully with shape: (3898963, 20)
+2025-12-15 17:10:15,233 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:10:17,651 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:10:22,898 - Data_Processing - INFO - Data sampled successfully with new shape: (389897, 20)
+2025-12-15 17:10:23,162 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-07_sampled_data.parquet'.
+2025-12-15 17:10:23,516 - Data_Processing - INFO - yellow_tripdata_2025-08.parquet Data loaded successfully with shape: (3574091, 20)
+2025-12-15 17:10:23,516 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:10:25,713 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:10:30,489 - Data_Processing - INFO - Data sampled successfully with new shape: (357410, 20)
+2025-12-15 17:10:30,782 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-08_sampled_data.parquet'.
+2025-12-15 17:10:31,125 - Data_Processing - INFO - yellow_tripdata_2025-09.parquet Data loaded successfully with shape: (4251015, 20)
+2025-12-15 17:10:31,126 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:10:33,913 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:10:39,138 - Data_Processing - INFO - Data sampled successfully with new shape: (425102, 20)
+2025-12-15 17:10:39,394 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-09_sampled_data.parquet'.
+2025-12-15 17:10:39,770 - Data_Processing - INFO - yellow_tripdata_2025-10.parquet Data loaded successfully with shape: (4428699, 20)
+2025-12-15 17:10:39,770 - Data_Processing - INFO - Creating the stratify variable for sampling...
+2025-12-15 17:10:42,632 - Data_Processing - INFO - Stratify variable created successfully.
+2025-12-15 17:10:49,376 - Data_Processing - INFO - Data sampled successfully with new shape: (442870, 20)
+2025-12-15 17:10:49,632 - Data_Processing - INFO - Sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\2025-10_sampled_data.parquet'.
+2025-12-15 17:10:52,091 - Data_Processing - INFO - Combined sampled data saved to 'C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\combined_sampled_data.parquet' with shape: (4023620, 20)
