@@ -25,7 +25,7 @@ Use the sidebar to navigate between different analysis pages:
 # selected_routes = st.sidebar.multiselect(
 #         "Select Routes",options=["Route A", "Route B", "Route C"],default=["Route A", "Route B", "Route C"]
 #     )
-
+@st.cache_data
 def load_data():
     import pandas as pd
     import duckdb
@@ -36,28 +36,29 @@ def load_data():
     # Placeholder for data loading logic
     data = None
     return data
+
 data = load_data()
 # st.dataframe(data.head())
 
 st.sidebar.success("Select a page from the sidebar to get started.")
 #adding exploring side bar pages
 # Sidebar Navigation
-st.sidebar.title("🌆 CityRide Navigation",width='content')
-page = st.sidebar.radio(
-    "Go to Pages",["Data Insights","Demand Forecasting","Route Optimization","Travel Behaviour"])
+# st.sidebar.title("🌆 CityRide Navigation",width='content')
+# page = st.sidebar.radio(
+#     "Go to Pages",["Data Insights","Demand Forecasting","Route Optimization","Travel Behaviour"])
 
-if page == "Data Insights":
-    st.header("Data Insights")
-    st.write("Data insights and visualizations go here.")
-elif page == "Demand Forecasting":
-    st.header("Demand Forecasting")
-    st.write("Demand forecasting models and results go here.")
-elif page == "Route Optimization":
-    st.header("Route Optimization")
-    st.write("Route optimization algorithms and visualizations go here.")
-elif page == "Travel Behaviour":
-    st.header("Travel Behaviour Analysis")
+# if page == "Data Insights":
+#     st.header("Data Insights")
+#     st.write("Data insights and visualizations go here.")
+# elif page == "Demand Forecasting":
+#     st.header("Demand Forecasting")
+#     st.write("Demand forecasting models and results go here.")
+# elif page == "Route Optimization":
+#     st.header("Route Optimization")
+#     st.write("Route optimization algorithms and visualizations go here.")
+# elif page == "Travel Behaviour":
+#     st.header("Travel Behaviour Analysis")
 
-st.write("Exploratory Data Analysis and key insights go here.")
+# st.write("Exploratory Data Analysis and key insights go here.")
 st.markdown("---")
 st.caption("Developed by Shafeeq")
