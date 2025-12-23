@@ -603,13 +603,133 @@ for col, (model, row) in zip(cols, results.iterrows()):
         st.metric("RMSE", f"{row['RMSE']:.2f}")
 
 
-st.markdown("""
-### 📌 Interpretation
+st.markdown(
+    "<h3 style='font-size:24px;'>Residual Analysis</h3>",
+    unsafe_allow_html=True
+)
+residual_df = results_df.copy()
+residual_df['Residual']=residual_df['Trips']-residual_df['Predicted']
+fig5, ax5 = plt.subplots(figsize=(14,5))
 
-- **XGBoost** achieves the lowest MAE and RMSE, indicating superior short-term and overall prediction accuracy.
-- **SARIMA / SARIMAX** perform well in capturing temporal structure but are limited in handling complex nonlinear effects.
-- **Prophet** shows the weakest performance for this dataset, likely due to limited sensitivity to short-term demand variability.
+ax5.plot(residual_df.index, residual_df["Residual"], color="orange", linewidth=1)
+ax5.axhline(0, color="white", linestyle="--", linewidth=1)
+
+fig5.patch.set_facecolor("black")
+ax5.set_facecolor("black")
+
+ax5.set_title("Residuals Over Time (XGBoost)", color="white")
+ax5.set_ylabel("Residual (Actual − Predicted)", color="white")
+ax5.set_xlabel("Datetime", color="white")
+ax5.tick_params(colors="white")
+
+st.pyplot(fig5)
+st.markdown("Residuals fluctuate around zero with no strong trend, indicating that the XGBoost model does not exhibit systematic bias over time.")
+
+
+##Residual Histogram
+fig6, ax6 = plt.subplots(figsize=(8,5))
+
+ax6.hist(residual_df["Residual"], bins=50, color="cyan", edgecolor="black")
+
+fig6.patch.set_facecolor("black")
+ax6.set_facecolor("black")
+
+ax6.set_title("Distribution of Residuals", color="white")
+ax6.set_xlabel("Residual Value", color="white")
+ax6.set_ylabel("Frequency", color="white")
+ax6.tick_params(colors="white")
+st.pyplot(fig6)
+
+st.markdown("Residuals are approximately centered around zero, indicating unbiased predictions with occasional large deviations during peak demand periods.")
+
+
+fig7, ax7 = plt.subplots(figsize=(8,5))
+
+ax7.scatter(
+    residual_df["Predicted"],
+    residual_df["Residual"],
+    alpha=0.4,
+    color="lime"
+)
+
+ax7.axhline(0, color="white", linestyle="--")
+
+fig7.patch.set_facecolor("black")
+ax7.set_facecolor("black")
+
+ax7.set_title("Residuals vs Predicted Values", color="white")
+ax7.set_xlabel("Predicted Trips", color="white")
+ax7.set_ylabel("Residual", color="white")
+ax7.tick_params(colors="white")
+st.pyplot(fig7)
+st.markdown("Residual spread increases slightly at higher predicted demand, suggesting higher uncertainty during peak hours.")
+
+
+
+
+residual_df["Hour"] = residual_df.index.hour
+
+hourly_residuals = residual_df.groupby("Hour")["Residual"].mean()
+
+fig8, ax8 = plt.subplots(figsize=(10,5))
+
+ax8.plot(hourly_residuals.index, hourly_residuals.values, marker="o", color="orange")
+
+fig8.patch.set_facecolor("black")
+ax8.set_facecolor("black")
+
+ax8.set_title("Average Residual by Hour of Day", color="white")
+ax8.set_xlabel("Hour", color="white")
+ax8.set_ylabel("Mean Residual", color="white")
+ax8.tick_params(colors="white")
+
+st.pyplot(fig8)
+st.markdown("The model slightly underpredicts demand during peak commuting hours, which is expected due to sudden demand spikes.")
+
+###let's plot Important features
+importance = xgb_model.feature_importances_
+feature_importance_df = pd.DataFrame({
+    "Feature": X_train.columns,
+    "Importance": importance
+}).sort_values(by="Importance", ascending=False)
+fig9, ax9 = plt.subplots(figsize=(8,5))
+fig9.patch.set_facecolor('black')
+ax9.set_facecolor('black')
+
+ax9.barh(
+    feature_importance_df["Feature"].head(10)[::-1],
+    feature_importance_df["Importance"].head(10)[::-1],
+    color='cyan'
+)
+
+ax9.set_xlabel("Importance", color='white')
+ax9.set_title("Top XGBoost Feature Importances", color='white')
+ax9.tick_params(colors='white')
+
+st.pyplot(fig9)
+
+st.markdown("""
+The XGBoost model automatically learns which factors contribute most to predicting taxi demand.
+Feature importance scores represent the **relative contribution** of each variable to the final prediction.
 """)
+
+st.subheader("Final Conclusion")
+
+st.markdown("""
+### 🏆 Best Performing Model: **XGBoost**
+
+**Key Findings:**
+- XGBoost achieved the **lowest MAE (34.79)** and **lowest RMSE (50.59)** among all tested models.
+- SARIMA and SARIMAX captured temporal patterns well but struggled with **non-linear effects**.
+- Prophet underperformed due to its assumption of smoother trend–seasonality structures.
+- Adding exogenous features (weather, holidays, festive windows) showed **limited improvement** for SARIMAX.
+- XGBoost effectively leveraged **lag features, calendar effects, and weather variables** together.
+
+**Final Decision:**
+- XGBoost is selected as the **final production model** due to superior accuracy, robustness, and flexibility.
+""")
+
+
 st.success(
     "✅ Conclusion: XGBoost outperforms traditional time-series models by effectively leveraging exogenous features and nonlinear relationships."
 )
