@@ -1,7 +1,22 @@
 [project]
-name = "trasnport-planning-streamlit"
+name = "transport-planning-streamlit"
 version = "0.1.0"
-description = "Add your description here"
+description = "Transport planning and forecasting application with Streamlit"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pandas",
+    "streamlit",
+    "duckdb",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "scikit-learn",
+    "prophet",
+    "pmdarima",
+    "statsmodels",
+    "meteostat",
+    "holidays",
+    "xgboost",
+    "numpy",
+]
