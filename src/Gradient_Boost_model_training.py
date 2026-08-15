@@ -13,9 +13,11 @@ import logging
 from pathlib import Path
 import yaml
 import mlflow
+import seaborn as sns
 import pandas as pd
 from lightgbm import LGBMRegressor
 from catboost import CatBoostRegressor
+import matplotlib.pyplot as plt
 #directories
 project_dir = Path().resolve()
 data_dir = project_dir/"Data"
@@ -26,8 +28,11 @@ import joblib
 dirs = ['logs','models', 'artifacts']
 for dir in dirs:
     os.makedirs(dir, exist_ok=True)
-log_dir = 'logs'
+
+log_dir = project_dir/'logs'
 artifacts_dir = project_dir/'artifacts'
+log_dir = 'logs'
+os.makedirs(log_dir, exist_ok=True)
 
 # logging configuration
 logger = logging.getLogger('Gradient_Boost_model_training')
@@ -78,7 +83,8 @@ def train_model(df, borough):
         logger.info(f" The features are {df.columns}")
         idx=int(len(df)*0.8)
         train=df.iloc[:idx]
-        test=df.iloc[idx:] 
+        test=df.iloc[idx:]
+        test.to_csv(data_dir/"test_split_data.csv")
         X_train=train.drop(columns=['Borough','Trips','tpep_pickup_datetime'],axis=1)
         y_train=train['Trips']
         X_test=test.drop(columns=['Borough','Trips','tpep_pickup_datetime'],axis=1)
@@ -162,19 +168,113 @@ def train_model(df, borough):
             feature_artifact_path =artifacts_dir/f"{borough}_feature_importance.csv"
             features_imp.to_csv(feature_artifact_path)
             mlflow.log_artifact(feature_artifact_path)
-            mlflow.set_tag("Best Model", model_name)
+            mlflow.set_tag("Best Model", best_model_name)
             mlflow.log_metrics(best_metrics)
-
+            df_metrics = pd.DataFrame([best_metrics])
+            df_metrics.to_csv(artifacts_dir/f"Error_metrics_for_{borough}.csv", index=False)
 
             mlflow.log_params(best_model.get_params())
+
+            ##Logging Model
             if best_model_name == 'CatBoostRegressor':
-                mlflow.catboost.log_model(best_model, "best_model")
+                mlflow.catboost.log_model(best_model, f"{best_model_name}")
             else:
-                mlflow.sklearn.log_model(best_model, "best_model")
+                mlflow.sklearn.log_model(best_model, f"{best_model_name}")
             mlflow.log_metrics(best_metrics)
             mlflow.log_param("Best Model", best_model_name)
             mlflow.set_tag("Winner", best_model_name)
             joblib.dump(best_model, model_dir/f"{borough}_{best_model_name}.pkl")
+
+
+            ###----------------------------------------------
+            #####Error Analysis
+            ###-----------------------------------------------
+            logger.info(f"Beginning Error Analysis for {borough}")
+            residuals = pd.DataFrame({"Actuals":y_test, "Predicted":(best_model.predict(X_test))})
+            residuals['Error']= residuals["Actuals"]-residuals["Predicted"]
+            residuals_path =artifacts_dir/f"{borough}_Residuals.csv"
+            residuals.to_csv(residuals_path,index=True)
+            errors_stats=residuals['Error'].describe()
+            errors_stats_df = errors_stats.reset_index()
+            errors_stats_df.columns = ["Statistic", "Value"]
+            mlflow.log_text(errors_stats_df.to_string(), "Errors_stats.txt")
+
+            total = len(residuals)
+
+            positive_errors = (residuals["Error"] > 0).sum() / total
+            negative_errors = (residuals["Error"] < 0).sum() / total
+            errors_dict= pd.DataFrame({'Positive Errors':[positive_errors], "Negative Erros":[negative_errors]})
+            mlflow.log_text(errors_dict.to_string(index=False), "Errors_Bias.txt")
+            ##Residuals data frame merging with date and time
+            residuals = residuals.join(df, how='left')
+            # residuals_df = residuals.merge(df, how='left', left_on='Unnamed: 0', right_index=True)
+
+
+            ####Plotting Errors
+            sns.set_style("whitegrid")
+            sns.set_context("talk")   # larger fonts for presentations
+
+            plt.figure(figsize=(12,8))  # bigger canvas
+
+            logger.info(f"Plotting Actual vs Predicted plot for {borough}")
+
+            # Plot Actuals
+            sns.lineplot(data=residuals, x='tpep_pickup_datetime', y='Actuals',
+                        label='Actual', color='steelblue', linewidth=2)
+
+            # Optional: add Predicted for comparison
+            sns.lineplot(data=residuals, x='tpep_pickup_datetime', y='Predicted',
+                        label='Predicted', color='darkorange', linewidth=2, linestyle='--')
+
+            # Titles and labels
+            plt.title("Actual vs Predicted Over Time", fontsize=18, fontweight='bold')
+            plt.xlabel("Pickup Time", fontsize=14)
+            plt.ylabel("Values", fontsize=14)
+
+            # Legend styling
+            plt.legend(title="Legend", fontsize=12)
+
+            # Rotate x-axis ticks if datetime
+            plt.xticks(rotation=45)
+
+            # Tight layout for neatness
+            plt.tight_layout()
+            plot_actual_predicted_path = artifacts_dir/f"{borough}_actual_vs_predicted.png"
+            plt.savefig(plot_actual_predicted_path,dpi=300, bbox_inches="tight")
+            plt.close()
+            mlflow.log_artifact(plot_actual_predicted_path,artifact_path="plots")
+
+            logger.info(f"Plotting histplot for {borough} ")
+            histplot_path = artifacts_dir/f"{borough}_Errors_histplot.png"
+            plt.figure(figsize=(8,6))
+            sns.histplot(residuals['Error'],bins=50)
+            plt.tight_layout()
+            plt.savefig(histplot_path)
+            plt.close()
+            mlflow.log_artifact(histplot_path,artifact_path="plots")
+
+
+            ####LArgest Errors 
+            largest_errors = residuals.reindex(residuals['Error'].abs().sort_values(ascending=False).index)
+            plt.figure(figsize=(10,6))
+            sns.scatterplot(data=largest_errors.head(50), x="Actuals", y="Predicted", 
+                            color="red", s=80, label="Largest Errors")
+
+            # Add diagonal line (perfect prediction reference)
+            max_val = max(largest_errors["Actuals"].max(), largest_errors["Predicted"].max())
+            plt.plot([0, max_val], [0, max_val], color="black", linestyle="--", label="Perfect Fit")
+
+            plt.title("Actual vs Predicted (Top Errors)", fontsize=16, fontweight="bold")
+            plt.xlabel("Actuals", fontsize=14)
+            plt.ylabel("Predicted", fontsize=14)
+            plt.legend()
+            plt.tight_layout()
+
+            largest_errors_path=artifacts_dir/f"{borough}_Largest_Errors.png"
+            plt.savefig(largest_errors_path)
+            plt.close()
+            mlflow.log_artifact(largest_errors_path,artifact_path="plots")
+
     except Exception as e:
         logger.error(f"Error while training the models: {e}")
 
