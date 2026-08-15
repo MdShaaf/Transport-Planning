@@ -1,22 +1,25 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split,StratifiedShuffleSplit
 import os
 import logging
-
+from pathlib import Path
 # Setting up logging
 log_dir = 'logs'
 os.makedirs(log_dir, exist_ok=True)
 
+project_dir = Path()
+data_dir = project_dir/"Data"
+
 # logging configuration
-logger = logging.getLogger('Data_Processing')
-logger.setLevel(logging.DEBUG)  # ✅ FIX: Use logging.DEBUG instead of string
+logger = logging.getLogger('Stratified_sampling')
+logger.setLevel(logging.DEBUG) 
 
 console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.DEBUG)  # ✅ FIX: Use logging.DEBUG
+console_handler.setLevel(logging.DEBUG)  
 
-log_file_path = os.path.join(log_dir, 'Data_Processing.log')  # ✅ FIX: Add .log extension
+log_file_path = os.path.join(log_dir, 'Stratified_sampling.log') 
 file_handler = logging.FileHandler(log_file_path)
-file_handler.setLevel(logging.DEBUG)  # ✅ FIX: Use logging.DEBUG
+file_handler.setLevel(logging.DEBUG)  
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 console_handler.setFormatter(formatter)
@@ -27,7 +30,7 @@ logger.addHandler(file_handler)
 
 logger.info("Reading the file....")
 
-def load_data(parquet_path, output_dir):
+def create_stratified_sample(parquet_path, output_dir):
     try:
         file_name = os.path.basename(parquet_path)
         month_tag = file_name.replace("yellow_tripdata_", "").replace(".parquet", "")
@@ -43,7 +46,7 @@ def load_data(parquet_path, output_dir):
         # Combine 'Hour' and 'Day of Week' to create a stratify variable
         df['Stratify_Var'] = df['Hour'].astype(str) + '_' + df['Day of Week'].astype(str)
 
-        # ✅ IMPORTANT: remove rare strata
+        # IMPORTANT: remove rare strata
         df = df.groupby('Stratify_Var').filter(lambda x: len(x) > 1)
 
         logger.info("Stratify variable created successfully.")
@@ -64,23 +67,24 @@ def load_data(parquet_path, output_dir):
         raise
 
 # Directory setup
-output_dir = r"C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data"
+output_dir = project_dir/"Data\Stratified_sampled_data"
 os.makedirs(output_dir, exist_ok=True)
 
-DATA_DIR = r"C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Data"
+
 parquet_files = [
-    f for f in os.listdir(DATA_DIR)
+    f for f in os.listdir(data_dir)
     if f.endswith(".parquet") and f.startswith("yellow_tripdata_")
 ]
 all_df=[]
-# ✅ FIX: Loop through all parquet files
+
+# Loop through all parquet files
 for parquet_file in parquet_files:
-    parquet_path = os.path.join(DATA_DIR, parquet_file)
-    df = load_data(parquet_path, output_dir)
+    parquet_path = data_dir/parquet_file
+    df = create_stratified_sample(parquet_path, output_dir)
     all_df.append(df)
 
 # Combine all sampled dataframes into one
 combined_df = pd.concat(all_df, ignore_index=True, axis=0)
-combined_output_file = os.path.join(output_dir, "combined_sampled_data.parquet")
+combined_output_file = data_dir/"combined_sampled_data.parquet"
 combined_df.to_parquet(combined_output_file, index=False)
 logger.info(f"Combined sampled data saved to '{combined_output_file}' with shape: {combined_df.shape}")

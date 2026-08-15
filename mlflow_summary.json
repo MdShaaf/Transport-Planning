@@ -1,0 +1,6067 @@
+[
+  {
+    "experiment_name": "NYC Taxi Demand",
+    "experiment_id": "1",
+    "runs": [
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 4.7230390577456784,
+          "MSE": 38.59752648348584,
+          "RMSE": 6.212690760329685,
+          "r2_score": 0.7313694801762947
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 4.7230390577456784,
+          "MSE": 38.59752648348584,
+          "RMSE": 6.212690760329685,
+          "r2_score": 0.7313694801762947
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 4.7230390577456784,
+          "MSE": 38.59752648348584,
+          "RMSE": 6.212690760329685,
+          "r2_score": 0.7313694801762947
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 4.811341462510603,
+          "MSE": 39.7742204604687,
+          "RMSE": 6.306680621410021,
+          "r2_score": 0.7231799420501774
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 4.811341462510603,
+          "MSE": 39.7742204604687,
+          "RMSE": 6.306680621410021,
+          "r2_score": 0.7231799420501774
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 4.811341462510603,
+          "MSE": 39.7742204604687,
+          "RMSE": 6.306680621410021,
+          "r2_score": 0.7231799420501774
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 4.877603054046631,
+          "MSE": 40.87739944458008,
+          "RMSE": 6.393543720245361,
+          "r2_score": 0.7155020236968994
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 4.877603054046631,
+          "MSE": 40.87739944458008,
+          "RMSE": 6.393543720245361,
+          "r2_score": 0.7155020236968994
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 4.877603054046631,
+          "MSE": 40.87739944458008,
+          "RMSE": 6.393543720245361,
+          "r2_score": 0.7155020236968994
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 7.711168591697934,
+          "MSE": 103.13367119642842,
+          "RMSE": 10.155474937019362,
+          "r2_score": 0.8382341012882958
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 7.711168591697934,
+          "MSE": 103.13367119642842,
+          "RMSE": 10.155474937019362,
+          "r2_score": 0.8382341012882958
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 7.711168591697934,
+          "MSE": 103.13367119642842,
+          "RMSE": 10.155474937019362,
+          "r2_score": 0.8382341012882958
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 7.8274970054626465,
+          "MSE": 107.0591812133789,
+          "RMSE": 10.346940994262695,
+          "r2_score": 0.832076907157898
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 7.8274970054626465,
+          "MSE": 107.0591812133789,
+          "RMSE": 10.346940994262695,
+          "r2_score": 0.832076907157898
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 7.8274970054626465,
+          "MSE": 107.0591812133789,
+          "RMSE": 10.346940994262695,
+          "r2_score": 0.832076907157898
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 7.85296791224613,
+          "MSE": 107.7855277379898,
+          "RMSE": 10.381980915894124,
+          "r2_score": 0.830937631130743
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 7.85296791224613,
+          "MSE": 107.7855277379898,
+          "RMSE": 10.381980915894124,
+          "r2_score": 0.830937631130743
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 7.85296791224613,
+          "MSE": 107.7855277379898,
+          "RMSE": 10.381980915894124,
+          "r2_score": 0.830937631130743
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.324520921552779,
+          "MSE": 168.64771877220534,
+          "RMSE": 12.986443653756995,
+          "r2_score": 0.8855887324408085,
+          "percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "borough": "Bronx",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.324520921552779,
+          "MSE": 168.64771877220534,
+          "RMSE": 12.986443653756995,
+          "r2_score": 0.8855887324408085,
+          "percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "borough": "Bronx",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.324520921552779,
+          "MSE": 168.64771877220534,
+          "RMSE": 12.986443653756995,
+          "r2_score": 0.8855887324408085,
+          "percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "borough": "Bronx",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.324520921552779,
+          "MSE": 168.64771877220534,
+          "RMSE": 12.986443653756995,
+          "r2_score": 0.8855887324408085,
+          "percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "borough": "Bronx",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.324520921552779,
+          "MSE": 168.64771877220534,
+          "RMSE": 12.986443653756995,
+          "r2_score": 0.8855887324408085,
+          "percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "borough": "Bronx",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.324520921552779,
+          "MSE": 168.64771877220534,
+          "RMSE": 12.986443653756995,
+          "r2_score": 0.8855887324408085,
+          "percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "borough": "Bronx",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.324520921552779,
+          "MSE": 168.64771877220534,
+          "RMSE": 12.986443653756995,
+          "r2_score": 0.8855887324408085,
+          "percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "borough": "Bronx",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.324520921552779,
+          "MSE": 168.64771877220534,
+          "RMSE": 12.986443653756995,
+          "r2_score": 0.8855887324408085,
+          "percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "borough": "Bronx",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.324520921552779,
+          "MSE": 168.64771877220534,
+          "RMSE": 12.986443653756995,
+          "r2_score": 0.8855887324408085
+        },
+        "params": {
+          "borough": "Bronx",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.382470892228945,
+          "MSE": 173.34137959364293,
+          "RMSE": 13.165917347212952,
+          "r2_score": 0.8824045347061275,
+          "percentage_error": 0.32428480845493735
+        },
+        "params": {
+          "borough": "Bronx",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.382470892228945,
+          "MSE": 173.34137959364293,
+          "RMSE": 13.165917347212952,
+          "r2_score": 0.8824045347061275,
+          "percentage_error": 0.32428480845493735
+        },
+        "params": {
+          "borough": "Bronx",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.382470892228945,
+          "MSE": 173.34137959364293,
+          "RMSE": 13.165917347212952,
+          "r2_score": 0.8824045347061275,
+          "percentage_error": 0.32428480845493735
+        },
+        "params": {
+          "borough": "Bronx",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.382470892228945,
+          "MSE": 173.34137959364293,
+          "RMSE": 13.165917347212952,
+          "r2_score": 0.8824045347061275,
+          "percentage_error": 0.32428480845493735
+        },
+        "params": {
+          "borough": "Bronx",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.382470892228945,
+          "MSE": 173.34137959364293,
+          "RMSE": 13.165917347212952,
+          "r2_score": 0.8824045347061275,
+          "percentage_error": 0.32428480845493735
+        },
+        "params": {
+          "borough": "Bronx",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.382470892228945,
+          "MSE": 173.34137959364293,
+          "RMSE": 13.165917347212952,
+          "r2_score": 0.8824045347061275,
+          "percentage_error": 0.32428480845493735
+        },
+        "params": {
+          "borough": "Bronx",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.382470892228945,
+          "MSE": 173.34137959364293,
+          "RMSE": 13.165917347212952,
+          "r2_score": 0.8824045347061275,
+          "percentage_error": 0.32428480845493735
+        },
+        "params": {
+          "borough": "Bronx",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.382470892228945,
+          "MSE": 173.34137959364293,
+          "RMSE": 13.165917347212952,
+          "r2_score": 0.8824045347061275,
+          "percentage_error": 0.32428480845493735
+        },
+        "params": {
+          "borough": "Bronx",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.382470892228945,
+          "MSE": 173.34137959364293,
+          "RMSE": 13.165917347212952,
+          "r2_score": 0.8824045347061275
+        },
+        "params": {
+          "borough": "Bronx",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.70560073852539,
+          "MSE": 187.90072631835938,
+          "RMSE": 13.707688331604004,
+          "r2_score": 0.8725274205207825,
+          "percentage_error": 0.31797462701797485
+        },
+        "params": {
+          "borough": "Bronx",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.70560073852539,
+          "MSE": 187.90072631835938,
+          "RMSE": 13.707688331604004,
+          "r2_score": 0.8725274205207825,
+          "percentage_error": 0.31797462701797485
+        },
+        "params": {
+          "borough": "Bronx",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.70560073852539,
+          "MSE": 187.90072631835938,
+          "RMSE": 13.707688331604004,
+          "r2_score": 0.8725274205207825,
+          "percentage_error": 0.31797462701797485
+        },
+        "params": {
+          "borough": "Bronx",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.70560073852539,
+          "MSE": 187.90072631835938,
+          "RMSE": 13.707688331604004,
+          "r2_score": 0.8725274205207825,
+          "percentage_error": 0.31797462701797485
+        },
+        "params": {
+          "borough": "Bronx",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.70560073852539,
+          "MSE": 187.90072631835938,
+          "RMSE": 13.707688331604004,
+          "r2_score": 0.8725274205207825,
+          "percentage_error": 0.31797462701797485
+        },
+        "params": {
+          "borough": "Bronx",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.70560073852539,
+          "MSE": 187.90072631835938,
+          "RMSE": 13.707688331604004,
+          "r2_score": 0.8725274205207825,
+          "percentage_error": 0.31797462701797485
+        },
+        "params": {
+          "borough": "Bronx",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.70560073852539,
+          "MSE": 187.90072631835938,
+          "RMSE": 13.707688331604004,
+          "r2_score": 0.8725274205207825,
+          "percentage_error": 0.31797462701797485
+        },
+        "params": {
+          "borough": "Bronx",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.70560073852539,
+          "MSE": 187.90072631835938,
+          "RMSE": 13.707688331604004,
+          "r2_score": 0.8725274205207825,
+          "percentage_error": 0.31797462701797485
+        },
+        "params": {
+          "borough": "Bronx",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Bronx_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 9.70560073852539,
+          "MSE": 187.90072631835938,
+          "RMSE": 13.707688331604004,
+          "r2_score": 0.8725274205207825
+        },
+        "params": {
+          "borough": "Bronx",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 25.179063138437634,
+          "MSE": 1182.4842628607614,
+          "RMSE": 34.3872689066864,
+          "r2_score": 0.9068638278669572,
+          "percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 25.179063138437634,
+          "MSE": 1182.4842628607614,
+          "RMSE": 34.3872689066864,
+          "r2_score": 0.9068638278669572,
+          "percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 25.179063138437634,
+          "MSE": 1182.4842628607614,
+          "RMSE": 34.3872689066864,
+          "r2_score": 0.9068638278669572,
+          "percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 25.179063138437634,
+          "MSE": 1182.4842628607614,
+          "RMSE": 34.3872689066864,
+          "r2_score": 0.9068638278669572,
+          "percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 25.179063138437634,
+          "MSE": 1182.4842628607614,
+          "RMSE": 34.3872689066864,
+          "r2_score": 0.9068638278669572,
+          "percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 25.179063138437634,
+          "MSE": 1182.4842628607614,
+          "RMSE": 34.3872689066864,
+          "r2_score": 0.9068638278669572,
+          "percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 25.179063138437634,
+          "MSE": 1182.4842628607614,
+          "RMSE": 34.3872689066864,
+          "r2_score": 0.9068638278669572,
+          "percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 25.179063138437634,
+          "MSE": 1182.4842628607614,
+          "RMSE": 34.3872689066864,
+          "r2_score": 0.9068638278669572,
+          "percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 25.179063138437634,
+          "MSE": 1182.4842628607614,
+          "RMSE": 34.3872689066864,
+          "r2_score": 0.9068638278669572
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.188230999401643,
+          "MSE": 1285.1524788722465,
+          "RMSE": 35.849023401931696,
+          "r2_score": 0.8987773569181561,
+          "percentage_error": 0.20915101405460562
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.188230999401643,
+          "MSE": 1285.1524788722465,
+          "RMSE": 35.849023401931696,
+          "r2_score": 0.8987773569181561,
+          "percentage_error": 0.20915101405460562
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.188230999401643,
+          "MSE": 1285.1524788722465,
+          "RMSE": 35.849023401931696,
+          "r2_score": 0.8987773569181561,
+          "percentage_error": 0.20915101405460562
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.188230999401643,
+          "MSE": 1285.1524788722465,
+          "RMSE": 35.849023401931696,
+          "r2_score": 0.8987773569181561,
+          "percentage_error": 0.20915101405460562
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.188230999401643,
+          "MSE": 1285.1524788722465,
+          "RMSE": 35.849023401931696,
+          "r2_score": 0.8987773569181561,
+          "percentage_error": 0.20915101405460562
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.188230999401643,
+          "MSE": 1285.1524788722465,
+          "RMSE": 35.849023401931696,
+          "r2_score": 0.8987773569181561,
+          "percentage_error": 0.20915101405460562
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.188230999401643,
+          "MSE": 1285.1524788722465,
+          "RMSE": 35.849023401931696,
+          "r2_score": 0.8987773569181561,
+          "percentage_error": 0.20915101405460562
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.188230999401643,
+          "MSE": 1285.1524788722465,
+          "RMSE": 35.849023401931696,
+          "r2_score": 0.8987773569181561,
+          "percentage_error": 0.20915101405460562
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.188230999401643,
+          "MSE": 1285.1524788722465,
+          "RMSE": 35.849023401931696,
+          "r2_score": 0.8987773569181561
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.326229095458984,
+          "MSE": 1298.8629150390625,
+          "RMSE": 36.03974151611328,
+          "r2_score": 0.8976974487304688,
+          "percentage_error": 0.1990831196308136
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.326229095458984,
+          "MSE": 1298.8629150390625,
+          "RMSE": 36.03974151611328,
+          "r2_score": 0.8976974487304688,
+          "percentage_error": 0.1990831196308136
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.326229095458984,
+          "MSE": 1298.8629150390625,
+          "RMSE": 36.03974151611328,
+          "r2_score": 0.8976974487304688,
+          "percentage_error": 0.1990831196308136
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.326229095458984,
+          "MSE": 1298.8629150390625,
+          "RMSE": 36.03974151611328,
+          "r2_score": 0.8976974487304688,
+          "percentage_error": 0.1990831196308136
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.326229095458984,
+          "MSE": 1298.8629150390625,
+          "RMSE": 36.03974151611328,
+          "r2_score": 0.8976974487304688,
+          "percentage_error": 0.1990831196308136
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.326229095458984,
+          "MSE": 1298.8629150390625,
+          "RMSE": 36.03974151611328,
+          "r2_score": 0.8976974487304688,
+          "percentage_error": 0.1990831196308136
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.326229095458984,
+          "MSE": 1298.8629150390625,
+          "RMSE": 36.03974151611328,
+          "r2_score": 0.8976974487304688,
+          "percentage_error": 0.1990831196308136
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.326229095458984,
+          "MSE": 1298.8629150390625,
+          "RMSE": 36.03974151611328,
+          "r2_score": 0.8976974487304688,
+          "percentage_error": 0.1990831196308136
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Brooklyn_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 26.326229095458984,
+          "MSE": 1298.8629150390625,
+          "RMSE": 36.03974151611328,
+          "r2_score": 0.8976974487304688
+        },
+        "params": {
+          "borough": "Brooklyn",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 30.61935818880402,
+          "MSE": 1985.5462736391958,
+          "RMSE": 44.55946895598281,
+          "r2_score": 0.9721847012602712
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 30.61935818880402,
+          "MSE": 1985.5462736391958,
+          "RMSE": 44.55946895598281,
+          "r2_score": 0.9721847012602712
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 30.61935818880402,
+          "MSE": 1985.5462736391958,
+          "RMSE": 44.55946895598281,
+          "r2_score": 0.9721847012602712
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 31.766311645507812,
+          "MSE": 2153.046142578125,
+          "RMSE": 46.40092849731445,
+          "r2_score": 0.9698382019996643
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 31.766311645507812,
+          "MSE": 2153.046142578125,
+          "RMSE": 46.40092849731445,
+          "r2_score": 0.9698382019996643
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 31.766311645507812,
+          "MSE": 2153.046142578125,
+          "RMSE": 46.40092849731445,
+          "r2_score": 0.9698382019996643
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 32.28317716751957,
+          "MSE": 2201.0759285594645,
+          "RMSE": 46.915625633252134,
+          "r2_score": 0.9691653700976235
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 32.28317716751957,
+          "MSE": 2201.0759285594645,
+          "RMSE": 46.915625633252134,
+          "r2_score": 0.9691653700976235
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 32.28317716751957,
+          "MSE": 2201.0759285594645,
+          "RMSE": 46.915625633252134,
+          "r2_score": 0.9691653700976235
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Model: CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 34.42254191181376,
+          "MSE": 2461.3835393133177,
+          "RMSE": 49.612332532479435,
+          "r2_score": 0.9710872345184829
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Model: CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 34.42254191181376,
+          "MSE": 2461.3835393133177,
+          "RMSE": 49.612332532479435,
+          "r2_score": 0.9710872345184829
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Model: XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 35.56037902832031,
+          "MSE": 2589.49658203125,
+          "RMSE": 50.8870964050293,
+          "r2_score": 0.9695823788642883
+        },
+        "params": {
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Model: XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 35.56037902832031,
+          "MSE": 2589.49658203125,
+          "RMSE": 50.8870964050293,
+          "r2_score": 0.9695823788642883
+        },
+        "params": {
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Model: LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 36.515747880674446,
+          "MSE": 2770.223538384122,
+          "RMSE": 52.63291307142445,
+          "r2_score": 0.9674594299436066
+        },
+        "params": {
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Model: LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 36.515747880674446,
+          "MSE": 2770.223538384122,
+          "RMSE": 52.63291307142445,
+          "r2_score": 0.9674594299436066
+        },
+        "params": {
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 50.2077391475274,
+          "MSE": 4856.720429870333,
+          "RMSE": 69.6901745576113,
+          "r2_score": 0.9172985638188594,
+          "percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 50.2077391475274,
+          "MSE": 4856.720429870333,
+          "RMSE": 69.6901745576113,
+          "r2_score": 0.9172985638188594,
+          "percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 50.2077391475274,
+          "MSE": 4856.720429870333,
+          "RMSE": 69.6901745576113,
+          "r2_score": 0.9172985638188594,
+          "percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 50.2077391475274,
+          "MSE": 4856.720429870333,
+          "RMSE": 69.6901745576113,
+          "r2_score": 0.9172985638188594,
+          "percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 50.2077391475274,
+          "MSE": 4856.720429870333,
+          "RMSE": 69.6901745576113,
+          "r2_score": 0.9172985638188594,
+          "percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 50.2077391475274,
+          "MSE": 4856.720429870333,
+          "RMSE": 69.6901745576113,
+          "r2_score": 0.9172985638188594,
+          "percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 50.2077391475274,
+          "MSE": 4856.720429870333,
+          "RMSE": 69.6901745576113,
+          "r2_score": 0.9172985638188594,
+          "percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 50.2077391475274,
+          "MSE": 4856.720429870333,
+          "RMSE": 69.6901745576113,
+          "r2_score": 0.9172985638188594,
+          "percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 50.2077391475274,
+          "MSE": 4856.720429870333,
+          "RMSE": 69.6901745576113,
+          "r2_score": 0.9172985638188594
+        },
+        "params": {
+          "borough": "Queens",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 51.30001705158526,
+          "MSE": 5171.476781946524,
+          "RMSE": 71.91298062204433,
+          "r2_score": 0.9119388148401577,
+          "percentage_error": 0.6688834027019593
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 51.30001705158526,
+          "MSE": 5171.476781946524,
+          "RMSE": 71.91298062204433,
+          "r2_score": 0.9119388148401577,
+          "percentage_error": 0.6688834027019593
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 51.30001705158526,
+          "MSE": 5171.476781946524,
+          "RMSE": 71.91298062204433,
+          "r2_score": 0.9119388148401577,
+          "percentage_error": 0.6688834027019593
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 51.30001705158526,
+          "MSE": 5171.476781946524,
+          "RMSE": 71.91298062204433,
+          "r2_score": 0.9119388148401577,
+          "percentage_error": 0.6688834027019593
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 51.30001705158526,
+          "MSE": 5171.476781946524,
+          "RMSE": 71.91298062204433,
+          "r2_score": 0.9119388148401577,
+          "percentage_error": 0.6688834027019593
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 51.30001705158526,
+          "MSE": 5171.476781946524,
+          "RMSE": 71.91298062204433,
+          "r2_score": 0.9119388148401577,
+          "percentage_error": 0.6688834027019593
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 51.30001705158526,
+          "MSE": 5171.476781946524,
+          "RMSE": 71.91298062204433,
+          "r2_score": 0.9119388148401577,
+          "percentage_error": 0.6688834027019593
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 51.30001705158526,
+          "MSE": 5171.476781946524,
+          "RMSE": 71.91298062204433,
+          "r2_score": 0.9119388148401577,
+          "percentage_error": 0.6688834027019593
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 51.30001705158526,
+          "MSE": 5171.476781946524,
+          "RMSE": 71.91298062204433,
+          "r2_score": 0.9119388148401577
+        },
+        "params": {
+          "borough": "Queens",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 52.162864685058594,
+          "MSE": 5261.47705078125,
+          "RMSE": 72.53604125976562,
+          "r2_score": 0.9104062914848328,
+          "percentage_error": 0.6457566022872925
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 52.162864685058594,
+          "MSE": 5261.47705078125,
+          "RMSE": 72.53604125976562,
+          "r2_score": 0.9104062914848328,
+          "percentage_error": 0.6457566022872925
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 52.162864685058594,
+          "MSE": 5261.47705078125,
+          "RMSE": 72.53604125976562,
+          "r2_score": 0.9104062914848328,
+          "percentage_error": 0.6457566022872925
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 52.162864685058594,
+          "MSE": 5261.47705078125,
+          "RMSE": 72.53604125976562,
+          "r2_score": 0.9104062914848328,
+          "percentage_error": 0.6457566022872925
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 52.162864685058594,
+          "MSE": 5261.47705078125,
+          "RMSE": 72.53604125976562,
+          "r2_score": 0.9104062914848328,
+          "percentage_error": 0.6457566022872925
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 52.162864685058594,
+          "MSE": 5261.47705078125,
+          "RMSE": 72.53604125976562,
+          "r2_score": 0.9104062914848328,
+          "percentage_error": 0.6457566022872925
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 52.162864685058594,
+          "MSE": 5261.47705078125,
+          "RMSE": 72.53604125976562,
+          "r2_score": 0.9104062914848328,
+          "percentage_error": 0.6457566022872925
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 52.162864685058594,
+          "MSE": 5261.47705078125,
+          "RMSE": 72.53604125976562,
+          "r2_score": 0.9104062914848328,
+          "percentage_error": 0.6457566022872925
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Queens_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 52.162864685058594,
+          "MSE": 5261.47705078125,
+          "RMSE": 72.53604125976562,
+          "r2_score": 0.9104062914848328
+        },
+        "params": {
+          "borough": "Queens",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(0, 1, 0)(1, 1, 1, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 119.82001865353001,
+          "MSE": 25247.34752671608,
+          "RMSE": 158.89413937183485,
+          "AIC": 112699.9412559063,
+          "BIC": 112721.52998024909
+        },
+        "params": {
+          "order": "(0, 1, 0)",
+          "seasonal_order": "(1, 1, 1, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(1, 1, 1)(1, 1, 1, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 122.75267235259338,
+          "MSE": 26174.717439857177,
+          "RMSE": 161.78602362335621,
+          "AIC": 112206.92788654537,
+          "BIC": 112242.90858665825
+        },
+        "params": {
+          "order": "(1, 1, 1)",
+          "seasonal_order": "(1, 1, 1, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(1, 1, 0)(1, 1, 1, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 123.00111838792073,
+          "MSE": 26242.243268196067,
+          "RMSE": 161.9945778975212,
+          "AIC": 112269.88531849749,
+          "BIC": 112298.67028428787
+        },
+        "params": {
+          "order": "(1, 1, 0)",
+          "seasonal_order": "(1, 1, 1, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(0, 1, 1)(1, 1, 1, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 123.56575701521244,
+          "MSE": 26425.76196996069,
+          "RMSE": 162.5600257442176,
+          "AIC": 112206.80352797618,
+          "BIC": 112235.58808806648
+        },
+        "params": {
+          "order": "(0, 1, 1)",
+          "seasonal_order": "(1, 1, 1, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(0, 1, 0)(2, 1, 1, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 149.54252989053484,
+          "MSE": 35772.39620081989,
+          "RMSE": 189.1359199116336,
+          "AIC": 111987.64526713727,
+          "BIC": 112016.42089139932
+        },
+        "params": {
+          "order": "(0, 1, 0)",
+          "seasonal_order": "(2, 1, 1, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(1, 1, 0)(2, 1, 1, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 154.25387552673257,
+          "MSE": 37597.52965065726,
+          "RMSE": 193.90082426502798,
+          "AIC": 111707.2416633747,
+          "BIC": 111743.21068539139
+        },
+        "params": {
+          "order": "(1, 1, 0)",
+          "seasonal_order": "(2, 1, 1, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(0, 1, 1)(2, 1, 1, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 155.26352352248227,
+          "MSE": 37969.25879432361,
+          "RMSE": 194.85702141396806,
+          "AIC": 111681.87558627938,
+          "BIC": 111717.84511660694
+        },
+        "params": {
+          "order": "(0, 1, 1)",
+          "seasonal_order": "(2, 1, 1, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(1, 1, 1)(2, 1, 1, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 155.702529962965,
+          "MSE": 38143.2567105122,
+          "RMSE": 195.30298694723592,
+          "AIC": 111668.30575020875,
+          "BIC": 111711.46857662876
+        },
+        "params": {
+          "order": "(1, 1, 1)",
+          "seasonal_order": "(2, 1, 1, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(0, 1, 1)(2, 1, 2, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 289.01185462748657,
+          "MSE": 113911.36671676974,
+          "RMSE": 337.50758023601446,
+          "AIC": 111273.5293203004,
+          "BIC": 111316.69153668534
+        },
+        "params": {
+          "order": "(0, 1, 1)",
+          "seasonal_order": "(2, 1, 2, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(1, 1, 1)(2, 1, 2, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 291.2682641015419,
+          "MSE": 115551.77390094615,
+          "RMSE": 339.9290718678621,
+          "AIC": 111267.19311697883,
+          "BIC": 111317.5490360946
+        },
+        "params": {
+          "order": "(1, 1, 1)",
+          "seasonal_order": "(2, 1, 2, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(1, 1, 0)(2, 1, 2, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 294.02845304152294,
+          "MSE": 117645.47986243438,
+          "RMSE": 342.9948685657475,
+          "AIC": 111307.45401556177,
+          "BIC": 111350.61684198178
+        },
+        "params": {
+          "order": "(1, 1, 0)",
+          "seasonal_order": "(2, 1, 2, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "SARIMA(0, 1, 0)(2, 1, 2, 24)",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 347.0275620647327,
+          "MSE": 160957.34436966426,
+          "RMSE": 401.1948957422867,
+          "AIC": 111469.64965707455,
+          "BIC": 111505.61867909123
+        },
+        "params": {
+          "order": "(0, 1, 0)",
+          "seasonal_order": "(2, 1, 2, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 257.5883795709502,
+          "MSE": 179997.29455280927,
+          "RMSE": 424.26088029985664,
+          "r2_score": 0.974732547450142,
+          "percentage_error": 2.635288993435968
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 257.5883795709502,
+          "MSE": 179997.29455280927,
+          "RMSE": 424.26088029985664,
+          "r2_score": 0.974732547450142,
+          "percentage_error": 2.635288993435968
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 257.5883795709502,
+          "MSE": 179997.29455280927,
+          "RMSE": 424.26088029985664,
+          "r2_score": 0.974732547450142,
+          "percentage_error": 2.635288993435968
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 257.5883795709502,
+          "MSE": 179997.29455280927,
+          "RMSE": 424.26088029985664,
+          "r2_score": 0.974732547450142,
+          "percentage_error": 2.635288993435968
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 257.5883795709502,
+          "MSE": 179997.29455280927,
+          "RMSE": 424.26088029985664,
+          "r2_score": 0.974732547450142,
+          "percentage_error": 2.635288993435968
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 257.5883795709502,
+          "MSE": 179997.29455280927,
+          "RMSE": 424.26088029985664,
+          "r2_score": 0.974732547450142,
+          "percentage_error": 2.635288993435968
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 257.5883795709502,
+          "MSE": 179997.29455280927,
+          "RMSE": 424.26088029985664,
+          "r2_score": 0.974732547450142,
+          "percentage_error": 2.635288993435968
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 257.5883795709502,
+          "MSE": 179997.29455280927,
+          "RMSE": 424.26088029985664,
+          "r2_score": 0.974732547450142,
+          "percentage_error": 2.635288993435968
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_CatBoostRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 257.5883795709502,
+          "MSE": 179997.29455280927,
+          "RMSE": 424.26088029985664,
+          "r2_score": 0.974732547450142
+        },
+        "params": {
+          "borough": "Manhattan",
+          "loss_function": "RMSE",
+          "verbose": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 282.92542531171324,
+          "MSE": 207449.4025191281,
+          "RMSE": 455.46613762071064,
+          "r2_score": 0.9708789071098477,
+          "percentage_error": 2.9958759959850805
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 282.92542531171324,
+          "MSE": 207449.4025191281,
+          "RMSE": 455.46613762071064,
+          "r2_score": 0.9708789071098477,
+          "percentage_error": 2.9958759959850805
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 282.92542531171324,
+          "MSE": 207449.4025191281,
+          "RMSE": 455.46613762071064,
+          "r2_score": 0.9708789071098477,
+          "percentage_error": 2.9958759959850805
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 282.92542531171324,
+          "MSE": 207449.4025191281,
+          "RMSE": 455.46613762071064,
+          "r2_score": 0.9708789071098477,
+          "percentage_error": 2.9958759959850805
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 282.92542531171324,
+          "MSE": 207449.4025191281,
+          "RMSE": 455.46613762071064,
+          "r2_score": 0.9708789071098477,
+          "percentage_error": 2.9958759959850805
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 282.92542531171324,
+          "MSE": 207449.4025191281,
+          "RMSE": 455.46613762071064,
+          "r2_score": 0.9708789071098477,
+          "percentage_error": 2.9958759959850805
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 282.92542531171324,
+          "MSE": 207449.4025191281,
+          "RMSE": 455.46613762071064,
+          "r2_score": 0.9708789071098477,
+          "percentage_error": 2.9958759959850805
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 282.92542531171324,
+          "MSE": 207449.4025191281,
+          "RMSE": 455.46613762071064,
+          "r2_score": 0.9708789071098477,
+          "percentage_error": 2.9958759959850805
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_LGBMRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 282.92542531171324,
+          "MSE": 207449.4025191281,
+          "RMSE": 455.46613762071064,
+          "r2_score": 0.9708789071098477
+        },
+        "params": {
+          "borough": "Manhattan",
+          "boosting_type": "gbdt",
+          "class_weight": "None",
+          "colsample_bytree": "1.0",
+          "importance_type": "split",
+          "learning_rate": "0.1",
+          "max_depth": "-1",
+          "min_child_samples": "20",
+          "min_child_weight": "0.001",
+          "min_split_gain": "0.0",
+          "n_estimators": "100",
+          "n_jobs": "None",
+          "num_leaves": "31",
+          "objective": "None",
+          "random_state": "None",
+          "reg_alpha": "0.0",
+          "reg_lambda": "0.0",
+          "subsample": "1.0",
+          "subsample_for_bin": "200000",
+          "subsample_freq": "0"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 281.0060119628906,
+          "MSE": 211301.65625,
+          "RMSE": 459.67559814453125,
+          "r2_score": 0.9703381657600403,
+          "percentage_error": 3.105130434036255
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 281.0060119628906,
+          "MSE": 211301.65625,
+          "RMSE": 459.67559814453125,
+          "r2_score": 0.9703381657600403,
+          "percentage_error": 3.105130434036255
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 281.0060119628906,
+          "MSE": 211301.65625,
+          "RMSE": 459.67559814453125,
+          "r2_score": 0.9703381657600403,
+          "percentage_error": 3.105130434036255
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 281.0060119628906,
+          "MSE": 211301.65625,
+          "RMSE": 459.67559814453125,
+          "r2_score": 0.9703381657600403,
+          "percentage_error": 3.105130434036255
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 281.0060119628906,
+          "MSE": 211301.65625,
+          "RMSE": 459.67559814453125,
+          "r2_score": 0.9703381657600403,
+          "percentage_error": 3.105130434036255
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 281.0060119628906,
+          "MSE": 211301.65625,
+          "RMSE": 459.67559814453125,
+          "r2_score": 0.9703381657600403,
+          "percentage_error": 3.105130434036255
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 281.0060119628906,
+          "MSE": 211301.65625,
+          "RMSE": 459.67559814453125,
+          "r2_score": 0.9703381657600403,
+          "percentage_error": 3.105130434036255
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 281.0060119628906,
+          "MSE": 211301.65625,
+          "RMSE": 459.67559814453125,
+          "r2_score": 0.9703381657600403,
+          "percentage_error": 3.105130434036255
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Manhattan_XGBRegressor",
+        "status": "FINISHED",
+        "metrics": {
+          "MAE": 281.0060119628906,
+          "MSE": 211301.65625,
+          "RMSE": 459.67559814453125,
+          "r2_score": 0.9703381657600403
+        },
+        "params": {
+          "borough": "Manhattan",
+          "objective": "reg:squarederror",
+          "base_score": "None",
+          "booster": "None",
+          "callbacks": "None",
+          "colsample_bylevel": "None",
+          "colsample_bynode": "None",
+          "colsample_bytree": "None",
+          "device": "None",
+          "early_stopping_rounds": "None",
+          "enable_categorical": "False",
+          "eval_metric": "None",
+          "feature_types": "None",
+          "feature_weights": "None",
+          "gamma": "None",
+          "grow_policy": "None",
+          "importance_type": "None",
+          "interaction_constraints": "None",
+          "learning_rate": "0.19",
+          "max_bin": "None",
+          "max_cat_threshold": "None",
+          "max_cat_to_onehot": "None",
+          "max_delta_step": "None",
+          "max_depth": "3",
+          "max_leaves": "None",
+          "min_child_weight": "None",
+          "missing": "nan",
+          "monotone_constraints": "None",
+          "multi_strategy": "None",
+          "n_estimators": "603",
+          "n_jobs": "None",
+          "num_parallel_tree": "None",
+          "random_state": "None",
+          "reg_alpha": "0.9",
+          "reg_lambda": "0.64",
+          "sampling_method": "None",
+          "scale_pos_weight": "None",
+          "subsample": "None",
+          "tree_method": "None",
+          "validate_parameters": "None",
+          "verbosity": "None"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 4.7230390577456784,
+          "best_mse": 38.59752648348584,
+          "best_rmse": 6.212690760329685,
+          "best_r2_score": 0.7313694801762947
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 4.7230390577456784,
+          "best_mse": 38.59752648348584,
+          "best_rmse": 6.212690760329685,
+          "best_r2_score": 0.7313694801762947
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 4.7230390577456784,
+          "best_mse": 38.59752648348584,
+          "best_rmse": 6.212690760329685,
+          "best_r2_score": 0.7313694801762947
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 7.711168591697934,
+          "best_mse": 103.13367119642842,
+          "best_rmse": 10.155474937019362,
+          "best_r2_score": 0.8382341012882958
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 7.711168591697934,
+          "best_mse": 103.13367119642842,
+          "best_rmse": 10.155474937019362,
+          "best_r2_score": 0.8382341012882958
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 7.711168591697934,
+          "best_mse": 103.13367119642842,
+          "best_rmse": 10.155474937019362,
+          "best_r2_score": 0.8382341012882958
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Bronx",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 9.324520921552779,
+          "best_mse": 168.64771877220534,
+          "best_rmse": 12.986443653756995,
+          "best_r2_score": 0.8855887324408085,
+          "best_percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Bronx",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 9.324520921552779,
+          "best_mse": 168.64771877220534,
+          "best_rmse": 12.986443653756995,
+          "best_r2_score": 0.8855887324408085,
+          "best_percentage_error": 0.3190891262561761
+        },
+        "params": {},
+        "tags": {
+          "Best Model": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Bronx",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 9.324520921552779,
+          "best_mse": 168.64771877220534,
+          "best_rmse": 12.986443653756995,
+          "best_r2_score": 0.8855887324408085,
+          "best_percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Bronx",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 9.324520921552779,
+          "best_mse": 168.64771877220534,
+          "best_rmse": 12.986443653756995,
+          "best_r2_score": 0.8855887324408085,
+          "best_percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Bronx",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 9.324520921552779,
+          "best_mse": 168.64771877220534,
+          "best_rmse": 12.986443653756995,
+          "best_r2_score": 0.8855887324408085,
+          "best_percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Bronx",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 9.324520921552779,
+          "best_mse": 168.64771877220534,
+          "best_rmse": 12.986443653756995,
+          "best_r2_score": 0.8855887324408085,
+          "best_percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Bronx",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 9.324520921552779,
+          "best_mse": 168.64771877220534,
+          "best_rmse": 12.986443653756995,
+          "best_r2_score": 0.8855887324408085,
+          "best_percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Bronx",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 9.324520921552779,
+          "best_mse": 168.64771877220534,
+          "best_rmse": 12.986443653756995,
+          "best_r2_score": 0.8855887324408085,
+          "best_percentage_error": 0.3190891262561761
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Bronx",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 9.324520921552779,
+          "best_mse": 168.64771877220534,
+          "best_rmse": 12.986443653756995,
+          "best_r2_score": 0.8855887324408085
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 25.179063138437634,
+          "best_mse": 1182.4842628607614,
+          "best_rmse": 34.3872689066864,
+          "best_r2_score": 0.9068638278669572,
+          "best_percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 25.179063138437634,
+          "best_mse": 1182.4842628607614,
+          "best_rmse": 34.3872689066864,
+          "best_r2_score": 0.9068638278669572,
+          "best_percentage_error": 0.20034027561160123
+        },
+        "params": {},
+        "tags": {
+          "Best Model": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 25.179063138437634,
+          "best_mse": 1182.4842628607614,
+          "best_rmse": 34.3872689066864,
+          "best_r2_score": 0.9068638278669572,
+          "best_percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 25.179063138437634,
+          "best_mse": 1182.4842628607614,
+          "best_rmse": 34.3872689066864,
+          "best_r2_score": 0.9068638278669572,
+          "best_percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 25.179063138437634,
+          "best_mse": 1182.4842628607614,
+          "best_rmse": 34.3872689066864,
+          "best_r2_score": 0.9068638278669572,
+          "best_percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 25.179063138437634,
+          "best_mse": 1182.4842628607614,
+          "best_rmse": 34.3872689066864,
+          "best_r2_score": 0.9068638278669572,
+          "best_percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 25.179063138437634,
+          "best_mse": 1182.4842628607614,
+          "best_rmse": 34.3872689066864,
+          "best_r2_score": 0.9068638278669572,
+          "best_percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 25.179063138437634,
+          "best_mse": 1182.4842628607614,
+          "best_rmse": 34.3872689066864,
+          "best_r2_score": 0.9068638278669572,
+          "best_percentage_error": 0.20034027561160123
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Brooklyn",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 25.179063138437634,
+          "best_mse": 1182.4842628607614,
+          "best_rmse": 34.3872689066864,
+          "best_r2_score": 0.9068638278669572
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 30.61935818880402,
+          "best_mse": 1985.5462736391958,
+          "best_rmse": 44.55946895598281,
+          "best_r2_score": 0.9721847012602712
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 30.61935818880402,
+          "best_mse": 1985.5462736391958,
+          "best_rmse": 44.55946895598281,
+          "best_r2_score": 0.9721847012602712
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 30.61935818880402,
+          "best_mse": 1985.5462736391958,
+          "best_rmse": 44.55946895598281,
+          "best_r2_score": 0.9721847012602712
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Bossting Models",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 34.42254191181376,
+          "best_mse": 2461.3835393133177,
+          "best_rmse": 49.612332532479435,
+          "best_r2_score": 0.9710872345184829
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Bossting Models",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 34.42254191181376,
+          "best_mse": 2461.3835393133177,
+          "best_rmse": 49.612332532479435,
+          "best_r2_score": 0.9710872345184829
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 50.2077391475274,
+          "best_mse": 4856.720429870333,
+          "best_rmse": 69.6901745576113,
+          "best_r2_score": 0.9172985638188594,
+          "best_percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 50.2077391475274,
+          "best_mse": 4856.720429870333,
+          "best_rmse": 69.6901745576113,
+          "best_r2_score": 0.9172985638188594,
+          "best_percentage_error": 0.6229063897455239
+        },
+        "params": {},
+        "tags": {
+          "Best Model": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 50.2077391475274,
+          "best_mse": 4856.720429870333,
+          "best_rmse": 69.6901745576113,
+          "best_r2_score": 0.9172985638188594,
+          "best_percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 50.2077391475274,
+          "best_mse": 4856.720429870333,
+          "best_rmse": 69.6901745576113,
+          "best_r2_score": 0.9172985638188594,
+          "best_percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 50.2077391475274,
+          "best_mse": 4856.720429870333,
+          "best_rmse": 69.6901745576113,
+          "best_r2_score": 0.9172985638188594,
+          "best_percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 50.2077391475274,
+          "best_mse": 4856.720429870333,
+          "best_rmse": 69.6901745576113,
+          "best_r2_score": 0.9172985638188594,
+          "best_percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 50.2077391475274,
+          "best_mse": 4856.720429870333,
+          "best_rmse": 69.6901745576113,
+          "best_r2_score": 0.9172985638188594,
+          "best_percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 50.2077391475274,
+          "best_mse": 4856.720429870333,
+          "best_rmse": 69.6901745576113,
+          "best_r2_score": 0.9172985638188594,
+          "best_percentage_error": 0.6229063897455239
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Queens",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 50.2077391475274,
+          "best_mse": 4856.720429870333,
+          "best_rmse": 69.6901745576113,
+          "best_r2_score": 0.9172985638188594
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "SARIMA Search",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 119.82001865353001,
+          "best_mse": 25247.34752671608,
+          "best_rmse": 158.89413937183485,
+          "best_aic": 112699.9412559063,
+          "best_bic": 112721.52998024909
+        },
+        "params": {
+          "best order": "(0, 1, 0)",
+          "best seasonal order": "(1, 1, 1, 24)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "ARIMA Search",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 278.8547215496368,
+          "best_mse": 129275.95076674738,
+          "best_rmse": 359.5496499327282,
+          "best_aic": 122426.62215178082,
+          "best_bic": 122433.82335049487
+        },
+        "params": {
+          "best order": "(0, 1, 0)"
+        },
+        "tags": {}
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 257.5883795709502,
+          "best_mse": 179997.29455280927,
+          "best_rmse": 424.26088029985664,
+          "best_r2_score": 0.974732547450142,
+          "best_percentage_error": 2.635288993435968
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 257.5883795709502,
+          "best_mse": 179997.29455280927,
+          "best_rmse": 424.26088029985664,
+          "best_r2_score": 0.974732547450142,
+          "best_percentage_error": 2.635288993435968
+        },
+        "params": {},
+        "tags": {
+          "Best Model": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 257.5883795709502,
+          "best_mse": 179997.29455280927,
+          "best_rmse": 424.26088029985664,
+          "best_r2_score": 0.974732547450142,
+          "best_percentage_error": 2.635288993435968
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 257.5883795709502,
+          "best_mse": 179997.29455280927,
+          "best_rmse": 424.26088029985664,
+          "best_r2_score": 0.974732547450142,
+          "best_percentage_error": 2.635288993435968
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 257.5883795709502,
+          "best_mse": 179997.29455280927,
+          "best_rmse": 424.26088029985664,
+          "best_r2_score": 0.974732547450142,
+          "best_percentage_error": 2.635288993435968
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FAILED",
+        "metrics": {
+          "best_mae": 257.5883795709502,
+          "best_mse": 179997.29455280927,
+          "best_rmse": 424.26088029985664,
+          "best_r2_score": 0.974732547450142,
+          "best_percentage_error": 2.635288993435968
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 257.5883795709502,
+          "best_mse": 179997.29455280927,
+          "best_rmse": 424.26088029985664,
+          "best_r2_score": 0.974732547450142,
+          "best_percentage_error": 2.635288993435968
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 257.5883795709502,
+          "best_mse": 179997.29455280927,
+          "best_rmse": 424.26088029985664,
+          "best_r2_score": 0.974732547450142,
+          "best_percentage_error": 2.635288993435968
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      },
+      {
+        "run_name": "Gradient Boosting Models for Manhattan",
+        "status": "FINISHED",
+        "metrics": {
+          "best_mae": 257.5883795709502,
+          "best_mse": 179997.29455280927,
+          "best_rmse": 424.26088029985664,
+          "best_r2_score": 0.974732547450142
+        },
+        "params": {
+          "loss_function": "RMSE",
+          "verbose": "0",
+          "Best Model": "CatBoostRegressor"
+        },
+        "tags": {
+          "Best Model": "CatBoostRegressor",
+          "Winner": "CatBoostRegressor"
+        }
+      }
+    ]
+  }
+]

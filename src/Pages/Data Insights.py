@@ -5,12 +5,16 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import json
+from pathlib import Path
 from sklearn.preprocessing import MinMaxScaler
+import os
 st.title("🚗 Data Insights" )
+project_dir = Path(__file__).resolve().parent.parent.parent
+data_dir = project_dir/"Data"
 @st.cache_resource
 def load_data():
     con = duckdb.connect(database=':memory:', read_only=False)
-    path=r"C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\combined_sampled_data.parquet"
+    path=os.path.join(data_dir,"combined_sampled_data.parquet")
     df = con.execute(f"SELECT * FROM '{path}'").df()
     return df
 data = load_data()
@@ -125,8 +129,8 @@ st.plotly_chart(fig6,use_container_width=False)
 
 #plotting famous pickup points
 st.subheader("📍 Most Popular Pickup Boroughs")
-locations_data = pd.read_csv(r"C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\taxi_zone_lookup.csv")
-locations_name = locations_data[['LocationID', 'Zone']]
+locations_data = pd.read_csv(data_dir/"taxi_zone_lookup.csv")
+locations_name = locations_data[['LocationID', 'Borough']]
 famous_trips = data.groupby(['PULocationID', 'DOLocationID']).size().reset_index(name='trip_count')
 famous_trips = famous_trips.sort_values(by='trip_count', ascending=False)
 famous_trips['Pick up Borough'] = famous_trips['PULocationID'].map(locations_data.set_index('LocationID')['Borough'])
@@ -154,7 +158,7 @@ zone_stats = (
 ).sort_values(by='Trip_Count', ascending=False).head(30)
 zone_stats['PULocationID'] = zone_stats['PULocationID'].astype(str)
 
-with open(r"C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\NYC Taxi Zones.geojson") as f:
+with open(data_dir/"NYC Taxi Zones.geojson") as f:
     taxi_zones_geo = json.load(f)
 
 fig10 = px.choropleth_mapbox(

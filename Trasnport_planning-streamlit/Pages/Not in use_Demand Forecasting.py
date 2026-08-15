@@ -17,14 +17,44 @@ from meteostat import Point, Hourly
 import holidays
 from xgboost import XGBRegressor
 import numpy as np
+import os
+import logging
 
+# Setting up logging
+log_dir = 'logs'
+os.makedirs(log_dir, exist_ok=True)
+
+# logging configuration
+logger = logging.getLogger('Model_Building')
+logger.setLevel(logging.DEBUG)  
+
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG) 
+
+log_file_path = os.path.join(log_dir, 'Model_Building.log')  
+file_handler = logging.FileHandler(log_file_path)
+file_handler.setLevel(logging.DEBUG)  
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+console_handler.setFormatter(formatter)
+file_handler.setFormatter(formatter)
+
+logger.addHandler(console_handler)
+logger.addHandler(file_handler)
+
+logger.info("Reading the file....")
 st.title("🚗 Demand Forecasting")
 @st.cache_data
 def load_data():
-    con = duckdb.connect(database=':memory:', read_only=False)
-    path=r"C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\combined_sampled_data.parquet"
-    df = con.execute(f"SELECT * FROM '{path}'").df()
-    return df
+    try:
+        con = duckdb.connect(database=':memory:', read_only=False)
+        path=r"C:\Users\Shaaf\Desktop\Data Science\Practice Projects\Transport Planning\Sampled_Data\combined_sampled_data.parquet"
+        df = con.execute(f"SELECT * FROM '{path}'").df()
+        return df
+    except Exception as e:
+        logger.error(f"Error while reading the file{e}")
+
+
 data = load_data()
 
 #filling null values
